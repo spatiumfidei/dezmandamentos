@@ -35,7 +35,7 @@ li {
 
 /* Estilizações de cabeçalho */
 header {
-  background-image: url('/codigo/fundo_header.jpg'); /* Insira o caminho da sua imagem */
+  background-image: url('fundo_header.jpg'); /* Insira o caminho da sua imagem */
   height: 14vh; /* Define a altura do header */
   color: white; /* Torna o texto branco, para contrastar com o fundo */
   align-items: center; /* Alinha verticalmente o texto */

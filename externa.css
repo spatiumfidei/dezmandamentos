@@ -1,3 +1,10 @@
+p{
+    font-size: 1.2rem;
+    color: #000;
+}
+
+
+
 @font-face {
     font-family: KaTeX_AMS;
     src: url(/static/fonts/KaTeX_AMS-Regular.38a68f7.woff2) format("woff2"), url(/static/fonts/KaTeX_AMS-Regular.7d307e8.woff) format("woff"), url(/static/fonts/KaTeX_AMS-Regular.2dbe16b.ttf) format("truetype");
@@ -1774,7 +1781,7 @@ samp * {
 }
 
 blockquote {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(16, 33, 187, 0.5);
     padding-left: 1.5em;
     border-left: 5px solid rgba(0, 0, 0, .1)
 }
