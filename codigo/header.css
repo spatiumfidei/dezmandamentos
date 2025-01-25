@@ -1,0 +1,20 @@
+header {
+    width: 100%; /* Garante que o header ocupe toda a largura disponível */
+}
+
+.cabec {
+    display: flex;
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    width: 90%; /* Define que a largura do conteúdo será 90% */
+    
+}
+
+.cabec img {
+    margin-right: 10px; /* Adiciona um pequeno espaçamento à direita da imagem */
+    width: 70px;
+}
+
+.cabec p {
+    font-size: 1.5em; /* Ajuste do tamanho da fonte se necessário */
+    margin: 0; /* Remove margens padrões do parágrafo */
+}

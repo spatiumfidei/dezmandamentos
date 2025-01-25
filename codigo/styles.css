@@ -1,0 +1,181 @@
+/* Resetando margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definição das fontes */
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/* Títulos com fonte mais elegante */
+h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 0px;
+  margin-bottom: 0rem;
+  color: #333;
+}
+
+
+/* Estilização dos parágrafos com texto explicativo */
+li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Estilizações de cabeçalho */
+header {
+  background-image: url('/codigo/fundo_header.jpg'); /* Insira o caminho da sua imagem */
+  height: 14vh; /* Define a altura do header */
+  color: white; /* Torna o texto branco, para contrastar com o fundo */
+  align-items: center; /* Alinha verticalmente o texto */
+  justify-content: center; /* Alinha horizontalmente o texto */
+}
+
+
+/* Definições para o restante do layout */
+footer {
+  height: 10%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.conteudo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+}
+
+main {
+  height: 75%;
+  padding: 1vh;
+  overflow-y: auto;
+  background-color: #bdbd9b;
+}
+
+/* Corpo da apresentação */
+.intermain {
+  width: 70%;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+}
+
+
+
+/* Estilização uniforme para imagens dentro de .intermain */
+.intermain img {
+  max-width: 200px;
+  /* Define um tamanho padrão para a largura das imagens */
+  height: auto;
+  /* Mantém a proporção original da imagem */
+  margin-right: 20px;
+  /* Espaço à direita da imagem */
+  margin-bottom: 20px;
+  /* Espaço abaixo da imagem */
+}
+
+.conteudo-titulo{
+  padding-right: 3%;
+}
+
+.center{
+  text-align: center;
+}
+
+
+#voltar, #avancar {
+  background-color: #0c110c;
+  border: 2px solid #440ddb; /* Adicionando uma borda sólida */
+  color: rgb(206, 194, 194);
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 10px 20px; /* Ajustando o padding para um tamanho mais equilibrado */
+  transition: background-color 0.3s, border-color 0.3s; /* Adicionando transição suave */
+}
+
+#voltar:disabled, #avancar:disabled {
+  background-color: #940f0f;
+  border-color: #888; /* Alterando a cor da borda quando desabilitado */
+  cursor: not-allowed;
+}
+
+
+
+
+/*TRASIÇÃO*/
+/* Efeito de transição para mudança de página */
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+footer {
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 10px; /* Adiciona espaço entre os botões */
+  padding: 20px; /* Adiciona espaçamento interno ao footer */
+  background-image: url(/codigo/fundo_header.jpg);
+}
+
+footer button {
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer button a {
+  color: white;
+  text-decoration: none;
+}
+
+footer button:hover {
+  background-color: #156fce;
+}
+
